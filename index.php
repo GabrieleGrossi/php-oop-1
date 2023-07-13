@@ -9,10 +9,6 @@ vengono istanziati almeno due oggetti ‘Movie’ e stampati a schermo i valori 
 <?php
     class Movie{
         //qui vanno le caratteristiche
-        public $movieName;
-        public $movieMainActor;
-        public $movieYear;
-        public $movieDirector;
 
 
         //qui vanno i metodi
