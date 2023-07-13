@@ -12,7 +12,7 @@ vengono istanziati almeno due oggetti ‘Movie’ e stampati a schermo i valori 
 
 
         //qui vanno i metodi
-        function __construct($movieName, $movieMainActor, $movieYear, $movieDirector){
+        function __construct(string $movieName,string $movieMainActor,int $movieYear,string $movieDirector){
             $this->movieName =$movieName;
             $this->movieMainActor=$movieMainActor;
             $this->movieYear=$movieYear;
