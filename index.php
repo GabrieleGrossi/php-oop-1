@@ -25,4 +25,7 @@ vengono istanziati almeno due oggetti ‘Movie’ e stampati a schermo i valori 
     }
     $HarryPotter = new Movie("Harry Potter e la pietra filosofale", "Daniel Radcliff", "2001", "Chris Columbus");
     echo $HarryPotter->movieName;
+    echo $HarryPotter->movieMainActor;
+    echo $HarryPotter->movieYear;
+    echo $HarryPotter->movieDirector;
 ?>
