@@ -44,60 +44,83 @@ vengono istanziati almeno due oggetti ‘Movie’ e stampati a schermo i valori 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <!-- MyStyle -->
+    <link rel="stylesheet" href="style.css">
     <title>Movies</title>
 </head>
 <body>
-    <h1>
+    <h1 class="text-center">
         Lista dei film più belli di sempre
     </h1>
-    <h2>
-        Titolo: 
-        <?php
-        echo $HarryPotter->name();
-        ?>
-    </h2>
-    <h2>
-        Attore protagonista: 
-        <?php
-        echo $HarryPotter->attore();
-        ?>
-    </h2>
-    <h2>
-        Anno di uscita: 
-        <?php
-        echo $HarryPotter->anno();
-        ?>
-    </h2>
-    <h2>
-        Diretto da: 
-        <?php
-        echo $HarryPotter->regista();
-        ?>
-    </h2>
-
-    <h2>
-        Titolo: 
-        <?php
-        echo $HarryPotter2->name();
-        ?>
-    </h2>
-    <h2>
-        Attore protagonista: 
-        <?php
-        echo $HarryPotter2->attore();
-        ?>
-    </h2>
-    <h2>
-        Anno di uscita: 
-        <?php
-        echo $HarryPotter2->anno();
-        ?>
-    </h2>
-    <h2>
-        Diretto da: 
-        <?php
-        echo $HarryPotter2->regista();
-        ?>
-    </h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="card mt-5" style="width: 18rem;">
+                    <div class="card-header">
+                        Titolo: 
+                        <?php
+                        echo $HarryPotter->name();
+                        ?>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            Attore protagonista: 
+                            <?php
+                            echo $HarryPotter->attore();
+                            ?>
+                        </li>
+                        <li class="list-group-item">
+                            Anno di uscita: 
+                            <?php
+                            echo $HarryPotter->anno();
+                            ?>
+                        </li>
+                        <li class="list-group-item">
+                            Diretto da: 
+                            <?php
+                            echo $HarryPotter->regista();
+                            ?>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12">
+            <div class="card mt-5" style="width: 18rem;">
+                    <div class="card-header">
+                        Titolo: 
+                        <?php
+                        echo $HarryPotter2->name();
+                        ?>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            Attore protagonista: 
+                            <?php
+                            echo $HarryPotter2->attore();
+                            ?>
+                        </li>
+                        <li class="list-group-item">
+                            Anno di uscita: 
+                            <?php
+                            echo $HarryPotter2->anno();
+                            ?>
+                        </li>
+                        <li class="list-group-item">
+                            Diretto da: 
+                            <?php
+                            echo $HarryPotter2->regista();
+                            ?>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
