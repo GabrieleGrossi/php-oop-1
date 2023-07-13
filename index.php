@@ -58,9 +58,9 @@ vengono istanziati almeno due oggetti ‘Movie’ e stampati a schermo i valori 
     <h1 class="text-center">
         Lista dei film più belli di sempre
     </h1>
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
+    <div class="container-fluid">
+        <div class="row ">
+            <div class="col-6">
                 <div class="card mt-5" style="width: 18rem;">
                     <div class="card-header">
                         Titolo: 
@@ -90,7 +90,7 @@ vengono istanziati almeno due oggetti ‘Movie’ e stampati a schermo i valori 
                     </ul>
                 </div>
             </div>
-            <div class="col-12">
+            <div class="col-6">
             <div class="card mt-5" style="width: 18rem;">
                     <div class="card-header">
                         Titolo: 
